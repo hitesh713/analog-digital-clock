@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Digital Clock</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="digital_clock.css">
+</head>
+
+<body onload="startTime()">
+    <header>
+        <div class="container">
+            <nav id="main-nav" class="flex items-center justify-between">
+                <div class="center flex items-center justify-between justify-center">
+                    <a href='index.html'>
+                        <button class="btn1 btn1-primary">ANALOG CLOCK</button>
+                    </a>
+                    <a href='index1.html'>
+                        <button class="btn2 btn2-secondary">DIGITAL CLOCK</button>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="clock flex-1  flex justify-center">
+            <div class="inside flex-1 flex">
+                <div class="content">
+                    <!--days-->
+                    <p class="days">
+                        <span id="sun">SUN</span>&nbsp;
+                        <span id="mon">MON</span>&nbsp;
+                        <span id="tue">TUE</span>&nbsp;
+                        <span id="wed">WED</span>&nbsp;
+                        <span id="thu">THU</span>&nbsp;
+                        <span id="fri">FRI</span>&nbsp;
+                        <span id="sat">SAT</span>&nbsp;
+                    </p>
+                    <!--time-->
+                    <div class="clockdate-wrapper">
+                        <div class="clocktime" id="text">
+                            <span id="hours"></span>:<span id="min"></span>:<span id="sec"></span>&nbsp;&nbsp;
+                            <span id="time"></span>
+                        </div>
+                        <!--date-->
+                        <div class="clockdate" id="date">
+                            <span id="cal">
+                                <img src="https://1.bp.blogspot.com/-GGL-vvwSBw0/YLsyxy3uMZI/AAAAAAAACYc/EyuaE0vEWxQYtMSOfwR0X5L8Y8gIB3exQCLcBGAsYHQ/s512/calendar2.png"
+                                    alt="cal">
+                            </span>
+                            <span id="day"></span>
+                            <span id="month"></span>
+                            <span id="year"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="digital_clock.js"></script>
+</body>
+
+</html>
